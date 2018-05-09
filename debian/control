@@ -1,0 +1,12 @@
+Source: ngsxfem
+Section: science
+Priority: optional
+Maintainer: Matthias Hochsteger <matthias.hochsteger@tuwien.ac.at>
+Build-Depends: debhelper (>= 8.0.0), git, cmake, build-essential, python3-dev, g++, ngsolve
+Standards-Version: 3.9.4
+Homepage: https://github.com/ngsxfem/ngsxfem
+
+Package: ngsxfem
+Architecture: any
+Depends: ngsolve
+Description: Add-On to NGSolve for unfitted finite element discretizations (XFEM, CutFEM, TraceFEM, etc...)
