@@ -15,6 +15,8 @@ set_target_properties(ngsxfem_spacetime PROPERTIES SUFFIX ".so")
 if(NOT WIN32)
     target_link_libraries(ngsxfem_spacetime ngsxfem_utils ${PYTHON_LIBS} ${LAPACK_LIBRARIES} ${NETGEN_LIBS})
     install( TARGETS ngsxfem_spacetime ${ngs_install_dir})
+else(NOT WIN32)
+    target_link_libraries(ngsxfem_spacetime ngsolve)
 endif(NOT WIN32)
 
 

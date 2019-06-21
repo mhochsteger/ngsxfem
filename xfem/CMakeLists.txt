@@ -20,7 +20,7 @@ add_library(ngsxfem_xfem ${NGS_LIB_TYPE}
 set_target_properties(ngsxfem_xfem PROPERTIES SUFFIX ".so")
 
 target_include_directories(ngsxfem_xfem PUBLIC ${NGSOLVE_INCLUDE_DIRS})
-target_link_libraries(ngsxfem_xfem ngsxfem_cutint ${PYTHON_LIBS} ${LAPACK_LIBRARIES} ${NETGEN_LIBS})
+target_link_libraries(ngsxfem_xfem ngsxfem_cutint ${PYTHON_LIBS} ${NETGEN_LIBS})
 install( TARGETS ngsxfem_xfem ${ngs_install_dir})
 
 install( FILES
